@@ -1,0 +1,15 @@
+{
+  "name": "memoteca",
+  "version": "1.0.0",
+  "description": "<h1>Figma</h1> <a href=\"https://www.figma.com/file/YTSUBbe7Zgwx3L567TAzTc/Memoteca---Angular%3A-Come%C3%A7ando-com-o-Framework?type=design&t=Dq2CCKTIof6ab6iA-0\">Acesso</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^14.0.0"
+  }
+}
