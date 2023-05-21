@@ -8,14 +8,14 @@
   <input type="text" name="pensamento" id="pensamento" class="input" placeholder="Digite o pensamento" [value]="pensamento.conteudo">
 
   <label for="autoria">Autoria ou Fonte</label>
-  <input type="text" name="autoria" id="autoria" class="input" placeholder="Digite a autoria ou a Fonte" [value]="pensamento.autoria">
+  <input type="text" name="autoria" id="autoria" class="input" placeholder="Digite a autoria ou a Fonte" value="{{pensamento.autoria}}">
 
   <label for="modelo">Selecione o modelo do card </label>
 
   <div class="container-radio">
     <div class="radio-modelo">
       <label for="modelo1">
-        <input type="radio" id="modelo1" name="modelo-card" value="modelo1">
+        <input type="radio" id="modelo1" name="modelo-card" value="modelo1" checked="{{pensamento.modelo === 'modelo1'}}">
 
         <div class="custom-radio">
           <span></span>
@@ -33,7 +33,7 @@
 
     <div class="radio-modelo">
       <label for="modelo2">
-        <input type="radio" id="modelo2" name="modelo-card" value="modelo2">
+        <input type="radio" id="modelo2" name="modelo-card" value="modelo2"  checked="{{pensamento.modelo === 'modelo2'}}">
 
         <div class="custom-radio">
           <span></span>
@@ -51,7 +51,7 @@
 
     <div class="radio-modelo">
       <label for="modelo3">
-        <input type="radio" id="modelo3" name="modelo-card" value="modelo3">
+        <input type="radio" id="modelo3" name="modelo-card" value="modelo3"  checked="{{pensamento.modelo === 'modelo3'}}">
 
         <div class="custom-radio">
           <span></span>
@@ -69,8 +69,8 @@
   </div>
 
   <div class="acoes">
-    <button class="botao">salvar</button>
-    <button class="botao">cancelar</button>
+    <button class="botao" (click)="criarPensamento()" >salvar</button>
+    <button class="botao" (click)="cancelarPensamento()">cancelar</button>
   </div>
 
  </form>
